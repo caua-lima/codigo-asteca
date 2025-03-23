@@ -1,0 +1,155 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* HEADER E NAVEGAÇÃO */
+header {
+  background-color: #006341;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #e0ffe0;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #006341;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* SEÇÃO DE NOTÍCIA */
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.news-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* SEÇÃO DE EMPREGOS */
+.jobs {
+  margin-top: 40px;
+  background-color: #eaf3ed;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.jobs ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.jobs li {
+  margin-bottom: 8px;
+}
+
+.jobs a {
+  color: #006341;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.jobs a:hover {
+  color: #004d2a;
+}
+
+/* SEÇÃO DE CARDS */
+.cards {
+  margin-top: 60px;
+  padding: 20px 0;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #006341;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #004d31;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* LINKS GERAIS */
+a {
+  color: #006341;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #004d2a;
+}
