@@ -153,3 +153,52 @@ a {
 a:hover {
   color: #004d2a;
 }
+
+.carousel-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #006341 #e0e0e0;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background-color: #006341;
+  border-radius: 10px;
+}
+
+.carousel-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  scroll-snap-align: start;
+  padding: 15px;
+  text-align: center;
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #006341;
+}
+
+.carousel-card p {
+  font-size: 14px;
+  color: #444;
+  margin-top: 5px;
+}
