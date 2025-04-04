@@ -1,0 +1,40 @@
+
+✅ COMANDOS PARA SUBIR ATUALIZAÇÕES NO GITHUB - CÓDIGO ASTECA
+
+🔁 Atualizar o projeto com novas alterações:
+
+1. Verifique se há alterações:
+   git status
+
+2. Adicione os arquivos alterados:
+   git add .
+
+3. Crie um commit com uma descrição:
+   git commit -m "v1.X - Descrição do que foi alterado"
+
+4. Envie para o GitHub:
+   git push
+
+📌 Criar uma nova VERSÃO do projeto (tag):
+
+1. Crie a tag localmente com mensagem:
+   git tag v1.X -m "v1.X - Descrição da versão"
+
+2. Envie a tag para o GitHub:
+   git push origin v1.X
+
+📄 Ver histórico de versões (commits):
+   git log --oneline
+
+📦 Ver lista de versões (tags) existentes:
+   git tag
+
+🔧 Se quiser deletar uma tag (opcional):
+   git tag -d v1.X              ← Deleta local
+   git push origin :refs/tags/v1.X  ← Deleta do GitHub
+
+🧪 Para usar tudo de uma vez (atalho rápido):
+   git add . && git commit -m "v1.X - Alterações" && git push
+
+────────────────────────────────────────────
+💡 Dica: Substitua "v1.X" pelo número da versão, ex: v1.5 ou v2.0

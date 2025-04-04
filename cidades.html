@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cidades do México | Código Asteca</title>
-  <link rel="stylesheet" href="css/home.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; padding: 0 20px;">
-      <div style="display: flex; align-items: center; gap: 15px;">
-        <img src="images/logo.png" alt="Logo Código Asteca" style="height: 90px;">
-        <div>
-          <h1 style="margin: 0; font-size: 2.2rem;">Código Asteca</h1>
-          <p style="margin: 5px 0 0;">Tecnologia e Futuro com Raízes Mexicanas</p>
+  <header class="bg-light py-3">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between flex-wrap">
+        <div class="d-flex align-items-center">
+          <img src="images/logo.png" alt="Logo Código Asteca" class="img-fluid" style="height: 90px;">
+          <div class="ms-3">
+            <h1 class="h3 mb-0">Código Asteca</h1>
+            <p class="mb-0">Tecnologia e Futuro com Raízes Mexicanas</p>
+          </div>
         </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Bandeira do México" class="img-fluid" style="height: 60px; border-radius: 4px;">
       </div>
-      <!-- Bandeira do México -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Bandeira do México" style="height: 60px; border-radius: 4px;">
+      <nav class="mt-3">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="empregos.html">Empregos</a></li>
+          <li class="nav-item"><a class="nav-link" href="investimentos.html">Investimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="cidades.html">Cidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
     </div>
-  
-    <nav style="margin-top: 20px; text-align: center;">
-      <a href="home.html">Início</a>
-      <a href="empregos.html">Empregos</a>
-      <a href="investimentos.html">Investimentos</a>
-      <a href="cidades.html">Cidades</a>
-      <a href="contato.html">Contato</a>
-    </nav>
   </header>
 
-  <div class="container">
-    <section class="news">
-      <h2 class="section-title">🌆 Cidades para Morar, Trabalhar e Estudar no México</h2>
-
-      <p>O México oferece diversas cidades com excelente qualidade de vida, infraestrutura, cultura vibrante e ótimas oportunidades profissionais. A escolha ideal vai depender do seu perfil e objetivos pessoais ou profissionais.</p>
-
-      <h3>🏙️ Cidades Recomendadas</h3>
-
+  <main class="container my-4">
+    <!-- Seção de Notícias sobre Cidades -->
+    <section class="news mb-5">
+      <h2 class="section-title mb-3">🌆 Cidades para Morar, Trabalhar e Estudar no México</h2>
+      <p>
+        O México oferece diversas cidades com excelente qualidade de vida, infraestrutura, cultura vibrante e ótimas oportunidades profissionais. A escolha ideal vai depender do seu perfil e objetivos pessoais ou profissionais.
+      </p>
+      <h3 class="mt-4">🏙️ Cidades Recomendadas</h3>
       <ul>
         <li><strong>Cidade do México:</strong> Centro econômico e cultural do país, com ampla oferta de empregos e universidades. Pontos negativos incluem trânsito intenso e poluição.</li>
         <li><strong>Guadalajara:</strong> Conhecida como o “Silicon Valley mexicano”, é ideal para quem busca oportunidades em tecnologia e inovação.</li>
@@ -46,8 +49,7 @@
         <li><strong>Cancún:</strong> Perfeita para quem busca qualidade de vida próxima ao mar, com foco no turismo e hotelaria.</li>
         <li><strong>Monterrey:</strong> Um dos principais centros industriais do México, com salários elevados, mas também com maior custo de vida.</li>
       </ul>
-
-      <h3>📌 Considerações</h3>
+      <h3 class="mt-4">📌 Considerações</h3>
       <ul>
         <li><strong>Clima:</strong> Guadalajara e San Luis Potosí têm clima agradável e semelhante ao brasileiro. Cancún é mais tropical.</li>
         <li><strong>Empregabilidade:</strong> Cidade do México e Monterrey oferecem empregos em diversos setores. Guadalajara foca em tecnologia.</li>
@@ -55,98 +57,125 @@
       </ul>
     </section>
 
-    <section class="jobs" style="margin-top: 60px;">
-      <h2 class="section-title">💼 Cidades com Oportunidades em TI</h2>
-
-      <p>Para quem deseja atuar na área de tecnologia, algumas cidades se destacam por seu desenvolvimento tecnológico e volume de vagas em TI.</p>
-
+    <!-- Seção de Oportunidades em TI -->
+    <section class="jobs mb-5">
+      <h2 class="section-title mb-3">💼 Cidades com Oportunidades em TI</h2>
+      <p>
+        Para quem deseja atuar na área de tecnologia, algumas cidades se destacam por seu desenvolvimento tecnológico e volume de vagas em TI.
+      </p>
       <ul>
         <li><strong>Cidade do México:</strong> Maior polo econômico do país, com vagas em suporte técnico, gestão de processos e posições administrativas.</li>
         <li><strong>Guadalajara:</strong> Grande polo tecnológico e sede de muitas startups e empresas de software.</li>
         <li><strong>Monterrey:</strong> Forte presença industrial e tecnológica, com boas oportunidades em infraestrutura e TI corporativa.</li>
         <li><strong>Querétaro:</strong> Centro em rápido crescimento com foco em data centers, cloud computing e engenharia de software.</li>
       </ul>
-
-      <h3>🏢 Empresas com Vagas em TI</h3>
+      <h3 class="mt-4">🏢 Empresas com Vagas em TI</h3>
       <ul>
         <li><strong>Nubank:</strong> Contrata engenheiros de software, especialistas em risco de TI e redes.</li>
         <li><strong>Selbetti:</strong> Provedora de soluções de TI em expansão no México, com foco corporativo.</li>
         <li><strong>Amazon AWS:</strong> Investe em infraestrutura e contrata engenheiros, suporte e analistas.</li>
         <li><strong>Google e Intel:</strong> Presentes em Querétaro e CDMX com posições para desenvolvedores e áreas técnicas.</li>
       </ul>
-
-      <p>👉 Para encontrar essas vagas, visite sites como <a href="https://www.linkedin.com/jobs/" target="_blank">LinkedIn</a>, <a href="https://www.occ.com.mx" target="_blank">OCC Mundial</a> e os sites oficiais das empresas.</p>
+      <p>
+        👉 Para encontrar essas vagas, visite sites como <a href="https://www.linkedin.com/jobs/" target="_blank">LinkedIn</a>, <a href="https://www.occ.com.mx" target="_blank">OCC Mundial</a> e os sites oficiais das empresas.
+      </p>
     </section>
 
     <!-- Galeria de Cidades com Rolagem Horizontal -->
-<section class="cities-gallery" style="margin-top: 60px;">
-  <h2 class="section-title">📸 Explore Visualmente as Cidades</h2>
-  <div class="carousel-container">
-    
-    <div class="carousel-card">
-      <img src="images/cidade-do-mexico.jpg" alt="Cidade do México">
-      <h3>🏙️ Cidade do México</h3>
-      <p>Capital vibrante com história, cultura e oportunidades.</p>
-    </div>
-
-    <div class="carousel-card">
-      <img src="images/guadalajara.jpg" alt="Guadalajara">
-      <h3>💻 Guadalajara</h3>
-      <p>Silicon Valley Mexicano, polo de tecnologia e inovação.</p>
-    </div>
-
-    <div class="carousel-card">
-      <img src="images/guanajuato.jpg" alt="Guanajuato">
-      <h3>🏰 Guanajuato</h3>
-      <p>Charme colonial, arte e excelente qualidade de vida.</p>
-    </div>
-
-    <div class="carousel-card">
-      <img src="images/monterrey.jpg" alt="Monterrey">
-      <h3>🏢 Monterrey</h3>
-      <p>Centro econômico forte, com empresas e altos salários.</p>
-    </div>
-
-    <div class="carousel-card">
-      <img src="images/san-luis-potosi.jpg" alt="San Luis Potosí">
-      <h3>🌤️ San Luis Potosí</h3>
-      <p>Tranquilidade e crescimento no setor industrial.</p>
-    </div>
-
-    <div class="carousel-card">
-      <img src="images/cancun.jpg" alt="Cancún">
-      <h3>🏖️ Cancún</h3>
-      <p>Praias paradisíacas e turismo internacional.</p>
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- Cards de navegação (cidades.html) -->
-    <section class="cards">
-      <h2 class="section-title">🔁 Explore outras seções do site</h2>
-      <div class="card-container">
-        <a href="empregos.html" class="card">
-          <h3>👨‍💻 Empregos</h3>
-          <p>Descubra as principais oportunidades de trabalho em tecnologia no México.</p>
-        </a>
-        <a href="investimentos.html" class="card">
-          <h3>💼 Investimentos</h3>
-          <p>Veja como grandes empresas estão impulsionando o setor de TI mexicano.</p>
-        </a>
-        <a href="contato.html" class="card">
-          <h3>📬 Contato</h3>
-          <p>Fale conosco ou envie suas dúvidas sobre o site e o conteúdo.</p>
-        </a>
+    <section class="cities-gallery mb-5">
+      <h2 class="section-title mb-4">📸 Explore Visualmente as Cidades</h2>
+      <div class="d-flex flex-nowrap overflow-auto">
+        <div class="card me-3" style="min-width: 300px;">
+          <img src="images/cidade-do-mexico.jpg" alt="Cidade do México" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">🏙️ Cidade do México</h3>
+            <p class="card-text">Capital vibrante com história, cultura e oportunidades.</p>
+          </div>
+        </div>
+        <div class="card me-3" style="min-width: 300px;">
+          <img src="images/guadalajara.jpg" alt="Guadalajara" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">💻 Guadalajara</h3>
+            <p class="card-text">Silicon Valley mexicano, polo de tecnologia e inovação.</p>
+          </div>
+        </div>
+        <div class="card me-3" style="min-width: 300px;">
+          <img src="images/guanajuato.jpg" alt="Guanajuato" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">🏰 Guanajuato</h3>
+            <p class="card-text">Charme colonial, arte e excelente qualidade de vida.</p>
+          </div>
+        </div>
+        <div class="card me-3" style="min-width: 300px;">
+          <img src="images/monterrey.jpg" alt="Monterrey" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">🏢 Monterrey</h3>
+            <p class="card-text">Centro econômico forte, com empresas e altos salários.</p>
+          </div>
+        </div>
+        <div class="card me-3" style="min-width: 300px;">
+          <img src="images/san-luis-potosi.jpg" alt="San Luis Potosí" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">🌤️ San Luis Potosí</h3>
+            <p class="card-text">Tranquilidade e crescimento no setor industrial.</p>
+          </div>
+        </div>
+        <div class="card" style="min-width: 300px;">
+          <img src="images/cancun.jpg" alt="Cancún" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">🏖️ Cancún</h3>
+            <p class="card-text">Praias paradisíacas e turismo internacional.</p>
+          </div>
+        </div>
       </div>
     </section>
-  </div>
 
-  <footer>
-    <p>&copy; 2025 - Código Asteca. Site desenvolvido para fins educacionais.</p>
+    <!-- Cards de Navegação -->
+    <section class="cards mb-5">
+      <h2 class="section-title mb-3">🔁 Explore outras seções do site</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">👨‍💻 Empregos</h3>
+              <p class="card-text">Descubra as principais oportunidades de trabalho em tecnologia no México.</p>
+            </div>
+            <div class="card-footer">
+              <a href="empregos.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">💼 Investimentos</h3>
+              <p class="card-text">Veja como grandes empresas estão impulsionando o setor de TI mexicano.</p>
+            </div>
+            <div class="card-footer">
+              <a href="investimentos.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">📬 Contato</h3>
+              <p class="card-text">Fale conosco ou envie suas dúvidas sobre o site e o conteúdo.</p>
+            </div>
+            <div class="card-footer">
+              <a href="contato.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center py-3">
+    <p class="mb-0">&copy; 2025 - Código Asteca. Site desenvolvido para fins educacionais.</p>
   </footer>
 
+  <!-- Bootstrap JS (opcional, para componentes interativos) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
