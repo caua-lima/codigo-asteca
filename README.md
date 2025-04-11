@@ -18,7 +18,7 @@ Este site pode ser hospedado gratuitamente no [GitHub Pages](https://pages.githu
 
 ## 📁 Estrutura do projeto
 
-/mexico │ ├── css/ │ └── home.css │ ├── images/ │ └── [imagens do projeto] │ ├── home.html ├── empregos.html ├── investimentos.html ├── cidades.html ├── contato.html ├── template.html ├── README.md └── VERSIONS.md
+/mexico │ ├── images/ │ └── [imagens do projeto] │ ├── home.html ├── empregos.html ├── investimentos.html ├── cidades.html ├── contato.html ├── template.html ├── README.md └── VERSIONS.md
 
 ## 👨‍💻 Desenvolvido por
 **Cauã Lima**  
